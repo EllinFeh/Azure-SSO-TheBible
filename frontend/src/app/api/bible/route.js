@@ -5,7 +5,7 @@ export async function GET(request) {
 
     console.log("Buscando versículos para:", query);
 
-    const apiUrl = `https://api.biblesupersearch.com/api?bible=almeida_ra&whole_words=true&page_limit=15&search=${encodeURIComponent(query)}`;
+    const apiUrl = `https://api.biblesupersearch.com/api?bible=almeida_ra&whole_words=true&page_limit=20&search=${encodeURIComponent(query)}`;
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
